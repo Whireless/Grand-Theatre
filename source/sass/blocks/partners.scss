@@ -1,0 +1,34 @@
+.partners {
+  padding-top: 80px;
+}
+
+.partners__title {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.partners__main-block {
+  display: flex;
+  justify-content: center;
+}
+
+.partners__list {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partners__item {
+  width: 150px;
+  height: 70px;
+  background-image: url("../img/gazprom_logo.svg");
+  background-repeat: no-repeat;
+}

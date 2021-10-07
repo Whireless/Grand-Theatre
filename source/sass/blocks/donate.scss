@@ -1,0 +1,80 @@
+.donate {
+  padding-top: 80px;
+}
+
+.donate__title {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.donate__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  fieldset {
+    display: grid;
+    grid-template-columns: 147px 147px;
+    grid-template-rows: min-content;
+    gap: 10px;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  input {
+    width: 135px;
+    background-color: $black2;
+    color: $white;
+    padding: 10px 0 10px 10px;
+    border: 1px solid $grey;
+  }
+
+  textarea {
+    width: 292px;
+    height: 80px;
+    background-color: $black2;
+    color: $white;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    border: 1px solid $grey;
+    resize: none;
+  }
+}
+
+.donate__button {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 190px;
+  height: 50px;
+  background-color: $gold;
+  color: $white;
+  margin: 40px 0 0 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+}
+
+.donate__confidentiality {
+  text-align: center;
+  color: $grey2;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
