@@ -48,6 +48,12 @@
   }
 }
 
+.donate__name-zone,
+.donate__contact-zone {
+  display: grid;
+  row-gap: 10px;
+}
+
 .donate__button {
   font-weight: 700;
   text-transform: uppercase;
@@ -77,4 +83,40 @@
   color: $grey2;
   margin-top: 30px;
   margin-bottom: 0;
+}
+
+@media (min-width: $tabletWidth) {
+  .donate__form {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: min-content min-content;
+
+    fieldset {
+      grid-column: 1 / 4;
+      grid-row: 1;
+      display: flex;
+      column-gap: 20px;
+    }
+
+    input {
+      width: 150px;
+    }
+
+    textarea {
+      width: 272px;
+    }
+  }
+
+  .donate__button {
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: auto;
+  }
+
+  .donate__confidentiality {
+    text-align: left;
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
 }

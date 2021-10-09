@@ -2,3 +2,12 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: $tabletWidth) {
+  .rating {
+    img {
+      width: 768px;
+      height: 550px;
+    }
+  }
+}

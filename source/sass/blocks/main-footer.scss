@@ -39,3 +39,26 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tabletWidth) {
+  .main-footer__contact-block {
+    font-size: 16px;
+    line-height: 26px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-footer__adress-block {
+    margin-top: 0;
+  }
+
+  .main-footer__copyright-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    p {
+      margin-top: 30px;
+    }
+  }
+}

@@ -21,6 +21,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 310px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 .main-header__main-title {
@@ -46,4 +49,23 @@
   background-color: $gold;
   margin-top: 50px;
   margin-right: auto;
+}
+
+@media (min-width: $tabletWidth) {
+  .main-header {
+    padding: 40px 60px 80px 60px;
+  }
+
+  .main-header__info-block {
+    max-width: 510px;
+    padding-top: 80px;
+  }
+
+  .main-header__main-title {
+    font-size: 50px;
+  }
+
+  .main-header__main-info {
+    width: 510px;
+  }
 }

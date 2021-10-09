@@ -28,7 +28,12 @@
 
 .about__info-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+
+  h3 {
+    flex-basis: 100%;
+  }
 
   p {
     position: relative;
@@ -61,4 +66,43 @@
       }
     }
   }
+}
+
+.about__theatre-image {
+  display: none;
+}
+
+@media (min-width: $tabletWidth) {
+  .about__info {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .about__intro-block {
+    h3 {
+      text-align: left;
+    }
+  }
+
+  .about__our-info {
+    text-align: left;
+    width: 445px;
+    margin-bottom: 35px;
+  }
+
+  .about__info-block {
+    flex-direction: column;
+
+    h3 {
+      flex-basis: auto;
+      text-align: left;
+    }
+
+    p {
+      &:nth-of-type(1) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
 }

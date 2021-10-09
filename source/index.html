@@ -11,13 +11,17 @@
 <body>
   <header class="main-header">
     <nav class="main-nav">
-      <ul class="main-nav__nav-list">
-        <li class="main-nav__nav-item"><a href="#">Главная</a></li>
-        <li class="main-nav__nav-item"><a href="#">О театре</a></li>
-        <li class="main-nav__nav-item"><a href="#">Наши постановки</a></li>
-        <li class="main-nav__nav-item"><a href="#">Партнёры театра</a></li>
-        <li class="main-nav__nav-item"><a href="#">Контакты</a></li>
-      </ul>
+      <button class="main-nav__nav-button main-nav__nav-button--open" type="button" aria-label="Открыть меню"></button>
+      <div class="main-nav__nav-block">
+        <button class="main-nav__nav-button main-nav__nav-button--close" type="button" aria-label="Закрыть меню"></button>
+        <ul class="main-nav__nav-list">
+          <li class="main-nav__nav-item"><a href="#">Главная</a></li>
+          <li class="main-nav__nav-item"><a href="#">О театре</a></li>
+          <li class="main-nav__nav-item"><a href="#">Наши постановки</a></li>
+          <li class="main-nav__nav-item"><a href="#">Партнёры театра</a></li>
+          <li class="main-nav__nav-item"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
       <a class="main-nav__link" href="tel:#">+7 495 123-45-67</a>
     </nav>
     <div class="main-header__info-block">
@@ -30,14 +34,18 @@
     <section class="about">
     <div class="container">
       <h2 class="about__title"><span class="gold-text">О</span> театре</h2>
-      <h3>Самый лучший театр СПБ</h3>
-      <p class="about__our-info">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
-      <h3>Немного о цифрах</h3>
-      <div class="about__info-block">
-        <p><span class="gold-text">1600</span> посадочный мест</p>
-        <p><span class="gold-text">350</span> лет истории</p>
+      <div class="about__info">
+        <div class="about__intro-block">
+          <h3>Самый лучший театр СПБ</h3>
+          <p class="about__our-info">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
+        </div>
+        <div class="about__info-block">
+          <h3>Немного о цифрах</h3>
+          <p><span class="gold-text">1600</span> посадочный мест</p>
+          <p><span class="gold-text">350</span> лет истории</p>
+        </div>
+        <div class="about__theatre-image"></div>
       </div>
-      <div class="about__theatre-image"></div>
     </div>
     </section>
     <section class="performances">
@@ -60,7 +68,12 @@
     </div>
     </section>
     <div class="rating">
-      <img src="img/rating.png" srcset="img/rating@2x.png 2x" width="360" height="300" alt="Лучше чем мы просто не бывает."></img>
+      <picture>
+        <source media="(min-width: 1360px)" srcset="img/desktop/rating.png 1x, img/desktop/rating@2x.png 2x">
+        <source media="(min-width: 992px)" srcset="img/pre-desktop/rating.png 1x, img/pre-desktop/rating@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/tablet/rating.png 1x, img/tablet/rating@2x.png 2x">
+        <img src="img/mobile/rating.png" srcset="img/mobile/rating@2x.png 2x" width="360" height="300" alt="Лучше чем мы просто не бывает."></img>
+      </picture>
     </div>
     <section class="partners">
     <div class="container">
@@ -80,10 +93,14 @@
       <h2 class="donate__title"><span class="gold-text">Стать</span> меценатом</h2>
       <form action="#" class="donate__form">
         <fieldset>
-          <input type="text" name="name" placeholder="Имя">
-          <input type="text" name="company" placeholder="Компания">
-          <input type="tel" name="telephone" placeholder="Телефон">
-          <input type="email" name="email" placeholder="E-mail">
+          <div class="donate__name-zone">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="company" placeholder="Компания">
+          </div>
+          <div class="donate__contact-zone">
+            <input type="tel" name="telephone" placeholder="Телефон">
+            <input type="email" name="email" placeholder="E-mail">
+          </div>
           <textarea name="message" placeholder="Сообщение"></textarea>
         </fieldset>
         <button class="donate__button" type="submit">Отправить</button>
@@ -106,9 +123,10 @@
     </div>
     <div class="main-footer__copyright-block">
       <p>(с) Все права защищены. Большой театр. 2021</p>
-      <p>Разработано d-e-n.ru</p>
+      <p>Дизайн разработан d-e-n.ru</p>
     </div>
   </div>
   </footer>
+  <script src="js/scripts.min.js"></script>
 </body>
 </html>
