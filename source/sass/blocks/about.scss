@@ -26,6 +26,12 @@
   margin-bottom: 50px;
 }
 
+.about__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .about__info-block {
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +80,7 @@
 
 @media (min-width: $tabletWidth) {
   .about__info {
-    display: flex;
+    flex-direction: row;
     column-gap: 20px;
   }
 

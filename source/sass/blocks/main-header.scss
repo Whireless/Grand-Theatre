@@ -1,8 +1,14 @@
 .main-header {
-  background-image: url("../img/bg-header.png");
+  background-image: url("../img/mobile/bg-header.png");
   background-repeat: no-repeat;
   background-size: 768px 530px;
   padding: 40px 25px 80px 25px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/bg-header@2x.png");
+    background-repeat: no-repeat;
+    background-size: 768px 530px;
+  }
 
   a {
     text-decoration: none;
@@ -53,12 +59,19 @@
 
 @media (min-width: $tabletWidth) {
   .main-header {
-    padding: 40px 60px 80px 60px;
+    background-image: url("../img/tablet/bg-header.png");
+    background-size: 992px 800px;
+    padding: 50px 60px 300px 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/bg-header@2x.png");
+      background-size: 992px 800px;
+    }
   }
 
   .main-header__info-block {
     max-width: 510px;
-    padding-top: 80px;
+    padding-top: 140px;
   }
 
   .main-header__main-title {
@@ -67,5 +80,11 @@
 
   .main-header__main-info {
     width: 510px;
+  }
+}
+
+@media (min-width: $pre-desktopWidth) {
+  .main-header {
+    padding: 50px 100px 300px 100px;
   }
 }

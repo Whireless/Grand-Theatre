@@ -36,5 +36,6 @@
 @media (min-width: $tabletWidth) {
   .partners__list {
     grid-template-columns: repeat(4, min-content);
+    gap: 17px;
   }
 }

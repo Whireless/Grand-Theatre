@@ -34,6 +34,13 @@
     color: $white;
     padding: 10px 0 10px 10px;
     border: 1px solid $grey;
+    transition: 0.4s;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $black;
+      transition: 0.4s;
+    }
   }
 
   textarea {
@@ -45,6 +52,13 @@
     padding: 10px 0 10px 10px;
     border: 1px solid $grey;
     resize: none;
+    transition: 0.4s;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $black;
+      transition: 0.4s;
+    }
   }
 }
 
