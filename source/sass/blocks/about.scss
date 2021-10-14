@@ -110,5 +110,10 @@
       }
     }
   }
+}
 
+@media (min-width: $pre-desktopWidth) {
+  .about__info {
+    column-gap: 100px;
+  }
 }

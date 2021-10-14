@@ -56,10 +56,7 @@
 .main-nav__nav-item {
   font-size: 16px;
   letter-spacing: 1px;
-
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 30px;
 
   a {
     &:hover,
@@ -69,7 +66,37 @@
   }
 }
 
+.main-nav__social-title {
+  display: none;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.main-nav__social-block {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.main-nav__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0;
+  padding: 25px 0 0 0;
+  list-style: none;
+}
+
+.main-nav__social-item {
+  svg {
+    &:hover,
+    &:focus {
+      fill: $gold;
+    }
+  }
+}
+
 .main-nav__link {
+  width: 97px;
   height: 100%;
   border-bottom: 2px solid $gold;
   margin-left: auto;
@@ -94,9 +121,106 @@
 
   .main-nav__nav-item {
     font-size: 18px;
+    margin-bottom: 40px;
+  }
 
-    &:not(:last-of-type) {
-      margin-bottom: 30px;
+  .main-nav__social-block {
+    width: 155px;
+  }
+
+  .main-nav__social-list {
+    gap: 50px;
+    padding: 60px 0 0 0;
+  }
+
+  .main-nav__social-item {
+    svg {
+      width: 45px;
+      height: 45px;
     }
+  }
+}
+
+@media (min-width: $pre-desktopWidth) {
+  .main-nav {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    row-gap: 50px;
+  }
+
+  .main-nav__nav-block {
+    position: static;
+    transform: translateX(0);
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .main-nav__nav-button {
+    display: none;
+  }
+
+  .main-nav__nav-list {
+    width: 705px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    margin: 0 auto;
+  }
+
+  .main-nav__nav-item {
+    margin-bottom: 0;
+  }
+
+  .main-nav__social-block {
+    width: 110px;
+    height: 800px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -50px;
+    left: -100px;
+    background-color: #33333375;
+  }
+
+  .main-nav__social-list {
+    width: 26px;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 0;
+    margin-bottom: 85px;
+  }
+
+  .main-nav__social-title {
+    position: relative;
+    letter-spacing: 2px;
+    width: 242px;
+    display: block;
+    transform: rotate(270deg);
+    color: $grey3;
+    margin-top: auto;
+    margin-bottom: 220px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -80px;
+      width: 60px;
+      height: 3px;
+      background-color: $grey3;
+    }
+  }
+
+  .main-nav__social-item {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .main-nav__link {
+    margin: 0 auto;
   }
 }

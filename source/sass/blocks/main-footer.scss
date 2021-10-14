@@ -46,6 +46,8 @@
     line-height: 26px;
     flex-direction: row;
     justify-content: space-between;
+    width: 648px;
+    margin: 0 auto;
   }
 
   .main-footer__adress-block {
@@ -56,9 +58,21 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
+    width: 648px;
+    margin: 30px auto 0 auto;
 
     p {
       margin-top: 30px;
     }
+  }
+}
+
+@media (min-width: $pre-desktopWidth) {
+  .main-footer__contact-block {
+    width: 792px;
+  }
+
+  .main-footer__copyright-block {
+    width: 792px;
   }
 }

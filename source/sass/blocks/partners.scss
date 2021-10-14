@@ -39,3 +39,9 @@
     gap: 17px;
   }
 }
+
+@media (min-width: $pre-desktopWidth) {
+  .partners__list {
+    gap: 50px;
+  }
+}

@@ -11,3 +11,11 @@
     }
   }
 }
+
+@media (min-width: $pre-desktopWidth) {
+  .rating {
+    img {
+      width: 992px;
+    }
+  }
+}

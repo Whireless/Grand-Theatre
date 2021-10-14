@@ -28,6 +28,7 @@
     display: block;
     width: 310px;
     height: 350px;
+    background-size: 310px 350px;
     transition: 0.4s;
 
     &:hover,
@@ -41,7 +42,10 @@
     a {
       background-image: url("../img/project-1.png");
       background-repeat: no-repeat;
-      background-size: 310px 350px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/project-1@2x.png");
+      }
     }
   }
 }
@@ -87,12 +91,42 @@
       a {
         background-image: url("../img/project-2.png");
         background-repeat: no-repeat;
-        background-size: 310px 350px;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/project-2@2x.png");
+        }
       }
     }
+
     &:nth-of-type(3),
     &:nth-of-type(4) {
       display: none;
+    }
+  }
+}
+
+@media (min-width: $pre-desktopWidth) {
+  .performances__list {
+    width: 750px;
+  }
+
+  .performances__item {
+    a {
+      width: 250px;
+      background-size: 250px 350px;
+    }
+
+    &:nth-of-type(3) {
+      display: block;
+
+      a {
+        background-image: url("../img/project-3.png");
+        background-repeat: no-repeat;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/project-3@2x.png");
+        }
+      }
     }
   }
 }
