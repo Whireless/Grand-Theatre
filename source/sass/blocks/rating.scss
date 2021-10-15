@@ -19,3 +19,11 @@
     }
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .rating {
+    img {
+      width: 1100px;
+    }
+  }
+}

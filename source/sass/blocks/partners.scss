@@ -45,3 +45,17 @@
     gap: 50px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .partners {
+    padding-top: 100px;
+  }
+
+  .partners__title {
+    margin-bottom: 80px;
+  }
+
+  .partners__list {
+    gap: 100px;
+  }
+}

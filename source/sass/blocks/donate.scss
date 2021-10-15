@@ -155,3 +155,33 @@
     row-gap: 40px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .donate {
+    padding-top: 100px;
+  }
+
+  .donate__title {
+    margin-bottom: 80px;
+  }
+
+  .donate__form {
+    fieldset {
+      column-gap: 95px;
+    }
+
+    input {
+      width: 210px;
+    }
+
+    textarea {
+      width: 320px;
+      height: 107px;
+    }
+  }
+
+  .donate__contact-zone,
+  .donate__name-zone {
+    row-gap: 50px;
+  }
+}

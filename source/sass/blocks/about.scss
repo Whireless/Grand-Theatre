@@ -117,3 +117,34 @@
     column-gap: 100px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .about {
+    padding-top: 100px;
+  }
+
+  .about__title {
+    margin-bottom: 80px;
+  }
+
+  .about__info {
+    column-gap: 20px;
+  }
+
+  .about__our-info {
+    width: 410px;
+  }
+
+  .about__theatre-image {
+    width: 350px;
+    height: 292px;
+    display: block;
+    background-image: url("../img/desktop/about-photo.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/about-photo@2x.png");
+      background-size: 350px 292px;
+    }
+  }
+}

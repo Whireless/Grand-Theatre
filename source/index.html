@@ -16,10 +16,10 @@
         <button class="main-nav__nav-button main-nav__nav-button--close" type="button" aria-label="Закрыть меню"></button>
         <ul class="main-nav__nav-list">
           <li class="main-nav__nav-item"><a href="#">Главная</a></li>
-          <li class="main-nav__nav-item"><a href="#">О театре</a></li>
-          <li class="main-nav__nav-item"><a href="#">Наши постановки</a></li>
-          <li class="main-nav__nav-item"><a href="#">Партнёры театра</a></li>
-          <li class="main-nav__nav-item"><a href="#">Контакты</a></li>
+          <li class="main-nav__nav-item"><a href="#about">О театре</a></li>
+          <li class="main-nav__nav-item"><a href="#performances">Наши постановки</a></li>
+          <li class="main-nav__nav-item"><a href="#partners">Партнёры театра</a></li>
+          <li class="main-nav__nav-item"><a href="#contacts">Контакты</a></li>
         </ul>
         <div class="main-nav__social-block">
           <h4 class="main-nav__social-title">Контактная информация</h4>
@@ -59,14 +59,23 @@
       </div>
       <a class="main-nav__link" href="tel:#">+7 495 123-45-67</a>
     </nav>
-    <div class="main-header__info-block">
-      <h1 class="main-header__main-title">Большой театр</h1>
-      <p class="main-header__main-info">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p>
-      <a class="main-header__poster-link" href="#">Афиша</a>
+    <div class="main-header__title-block">
+      <div class="main-header__info-block">
+        <h1 class="main-header__main-title">Большой театр</h1>
+        <p class="main-header__main-info">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p>
+        <a class="main-header__poster-link" href="#">Афиша</a>
+      </div>
+      <div class="poster">
+        <div class="poster__image"></div>
+        <div class="poster__button-block">
+          <button class="poster__button poster__button--back" type="button">Пред</button>
+          <button class="poster__button poster__button--next" type="button">След</button>
+        </div>
+      </div>
     </div>
   </header>
   <main class="main-content">
-    <section class="about">
+    <section class="about" id="about">
     <div class="container">
       <h2 class="about__title"><span class="gold-text">О</span> театре</h2>
       <div class="about__info">
@@ -83,7 +92,7 @@
       </div>
     </div>
     </section>
-    <section class="performances">
+    <section class="performances" id="performances">
     <div class="container">
       <h2 class="performances__title"><span class="gold-text">Наши</span> постановки</h2>
       <div class="performances__main-block">
@@ -110,7 +119,7 @@
         <img src="img/mobile/rating.png" srcset="img/mobile/rating@2x.png 2x" width="360" height="300" alt="Лучше чем мы просто не бывает."></img>
       </picture>
     </div>
-    <section class="partners">
+    <section class="partners" id="partners">
     <div class="container">
       <h2 class="partners__title"><span class="gold-text">Партнеры</span> театра</h2>
       <div class="partners__main-block">
@@ -144,7 +153,7 @@
     </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" id="contacts">
   <div class="container">
     <div class="main-footer__contact-block">
       <div class="main-footer__number-block">

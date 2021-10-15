@@ -103,6 +103,10 @@
       display: none;
     }
   }
+
+  .performances__slider-list {
+    margin: 30px auto 40px auto;
+  }
 }
 
 @media (min-width: $pre-desktopWidth) {
@@ -128,5 +132,51 @@
         }
       }
     }
+  }
+
+  .performances__slider-list {
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .performances {
+    padding-top: 100px;
+  }
+
+  .performances__title {
+    margin-bottom: 80px;
+  }
+
+  .performances__list {
+    width: 960px;
+  }
+
+  .performances__item {
+    a {
+      width: 240px;
+      background-size: 240px 350px;
+    }
+
+    &:nth-of-type(4) {
+      display: block;
+
+      a {
+        background-image: url("../img/project-4.png");
+        background-repeat: no-repeat;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/project-4@2x.png");
+        }
+      }
+    }
+  }
+
+  .performances__main-block {
+    padding-bottom: 80px;
+  }
+
+  .performances__slider-list {
+    display: none;
   }
 }

@@ -97,3 +97,22 @@
     }
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .main-header {
+    padding: 50px 200px 125px 200px;
+  }
+
+  .main-header__info-block {
+    margin: 0;
+    padding-top: 120px;
+  }
+
+  .main-header__title-block {
+    width: 968px;
+    display: flex;
+    column-gap: 85px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+}

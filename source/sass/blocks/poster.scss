@@ -1,0 +1,74 @@
+.poster {
+  display: none;
+}
+
+@media (min-width: $desktopWidth) {
+  .poster {
+    display: block;
+  }
+
+  .poster__image {
+    width: 370px;
+    height: 510px;
+    background-image: url("../img/desktop/poster.png");
+    background-repeat: no-repeat;
+    background-size: 370px 510px;
+  }
+
+  .poster__button-block {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+  }
+
+  .poster__button {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    background-color: transparent;
+    color: $grey3;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      transition: 0.4s;
+    }
+
+    &--back {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 16px;
+        top: 0;
+        left: -65px;
+        background-image: url("../img/desktop/arrow.svg");
+        background-repeat: no-repeat;
+        background-size: 40px 16px;
+      }
+    }
+
+    &--next {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 16px;
+        top: 0;
+        right: -65px;
+        transform: rotate(180deg);
+        background-image: url("../img/desktop/arrow.svg");
+        background-repeat: no-repeat;
+        background-size: 40px 16px;
+      }
+    }
+  }
+}

@@ -70,9 +70,21 @@
 @media (min-width: $pre-desktopWidth) {
   .main-footer__contact-block {
     width: 792px;
+    padding-top: 120px;
   }
 
   .main-footer__copyright-block {
     width: 792px;
   }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-footer__contact-block {
+    width: 960px;
+  }
+
+  .main-footer__copyright-block {
+    width: 960px;
+  }
+
 }
