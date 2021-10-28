@@ -58,12 +58,18 @@ const optimizeImages = () => {
 }
 exports.optimizeImages = optimizeImages;
 
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{png,svg}')
+    .pipe(gulp.dest('build/img'))
+}
+exports.copyImages = copyImages;
+
 // Copy
 
 const copy = (done) => {
   gulp.src([
     // 'source/fonts/*.{woff2,woff}', // Копирование шрифтов
-    'source/img/**/*.ico',
+    'source/*.ico',
   ], {
     base: 'source'
   })
@@ -128,7 +134,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
-  optimizeImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,
