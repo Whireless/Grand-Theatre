@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <title>Большой театр</title>
 </head>
@@ -93,30 +93,33 @@
       </div>
     </section>
     <section class="performances" id="performances">
-      <div class="container">
-        <h2 class="performances__title"><span class="gold-text">Наши</span> постановки</h2>
-        <div class="performances__main-block">
-          <ul class="performances__list">
-            <li class="performances__item"><a href="#"></a></li>
-            <li class="performances__item"><a href="#"></a></li>
-            <li class="performances__item"><a href="#"></a></li>
-            <li class="performances__item"><a href="#"></a></li>
+      <h2 class="performances__title"><span class="gold-text">Наши</span> постановки</h2>
+        <div class="performances__main-block swiper">
+          <ul class="performances__list swiper-wrapper">
+            <li class="performances__item swiper-slide">
+              <img class="performances__image" src="img/project-1.png" srcset="img/project-1@2x.png 2x" width="380" height="440" alt="Проект 1"></img>
+            </li>
+            <li class="performances__item swiper-slide">
+              <img class="performances__image" src="img/project-2.png" srcset="img/project-2@2x.png 2x" width="380" height="440" alt="Проект 2"></img>
+            </li>
+            <li class="performances__item swiper-slide">
+              <img class="performances__image" src="img/project-3.png" srcset="img/project-3@2x.png 2x" width="380" height="440" alt="Проект 3"></img>
+            </li>
+            <li class="performances__item swiper-slide">
+              <img class="performances__image" src="img/project-4.png" srcset="img/project-4@2x.png 2x" width="380" height="440" alt="Проект 4"></img>
+            </li>
           </ul>
+          <button class="performances__button swiper-button-prev"></button>
+          <button class="performances__button swiper-button-next"></button>
+          <div class="performances__pagination swiper-pagination"></div>
         </div>
-        <ul class="performances__slider-list">
-          <li class="performances__slider-item"><button class="performances__slider-button performances__slider-button--active" type="button" aria-label="Первый слайд"></button></li>
-          <li class="performances__slider-item"><button class="performances__slider-button" type="button" aria-label="Второй слайд"></button></li>
-          <li class="performances__slider-item"><button class="performances__slider-button" type="button" aria-label="Третий слайд"></button></li>
-          <li class="performances__slider-item"><button class="performances__slider-button" type="button" aria-label="Четвёртый слайд"></button></li>
-        </ul>
-      </div>
     </section>
     <div class="rating">
       <picture>
         <source media="(min-width: 1360px)" srcset="img/desktop/rating.png 1x, img/desktop/rating@2x.png 2x">
         <source media="(min-width: 992px)" srcset="img/pre-desktop/rating.png 1x, img/pre-desktop/rating@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/tablet/rating.png 1x, img/tablet/rating@2x.png 2x">
-        <img src="img/mobile/rating.png" srcset="img/mobile/rating@2x.png 2x" width="360" height="300" alt="Лучше чем мы просто не бывает."></img>
+        <img src="img/mobile/rating.png" srcset="img/mobile/rating@2x.png 2x" width="380" height="270" alt="Лучше чем мы просто не бывает."></img>
       </picture>
     </div>
     <section class="partners" id="partners">
@@ -171,6 +174,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/scripts.min.js"></script>
+  <script src="js/scripts.js" type="module"></script>
 </body>
 </html>

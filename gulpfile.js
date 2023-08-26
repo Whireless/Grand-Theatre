@@ -42,9 +42,8 @@ exports.styles = styles;
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/scripts.js')
+  return gulp.src('source/js/*.js')
     .pipe(terser())
-    .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('build/js'))
 }
 exports.scripts = scripts;

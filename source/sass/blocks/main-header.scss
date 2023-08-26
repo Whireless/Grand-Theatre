@@ -34,9 +34,10 @@
 
 .main-header__main-title {
   font-size: 35px;
+  line-height: 30px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .main-header__main-info {
@@ -62,7 +63,7 @@
   .main-header {
     background-image: url("../img/tablet/bg-header.png");
     background-size: 992px 800px;
-    padding: 50px 60px 300px 60px;
+    padding: 50px 60px 200px 60px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/tablet/bg-header@2x.png");
@@ -77,6 +78,8 @@
 
   .main-header__main-title {
     font-size: 50px;
+    line-height: 43px;
+    align-self: start;
   }
 
   .main-header__main-info {
@@ -89,7 +92,7 @@
     background-image: url("../img/pre-desktop/bg-header.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 100px 245px 100px;
+    padding: 50px 100px 230px 100px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/pre-desktop/bg-header@2x.png");
